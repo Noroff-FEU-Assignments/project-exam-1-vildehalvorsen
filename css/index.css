@@ -1,0 +1,11 @@
+.headerImage {
+    background-image: url(/images/1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 250px;
+}
+
+h2 {
+    font-family: "Isonorm D", sans-serif;
+    text-transform: uppercase;
+}
