@@ -1,11 +1,99 @@
-.headerImage {
-    background-image: url(/images/1.jpg);
-    background-position: center;
-    background-size: cover;
-    height: 250px;
-}
-
 h2 {
     font-family: "Isonorm D", sans-serif;
     text-transform: uppercase;
+    font-size: 1.8em;
+    text-align: center;
+    margin: 70px 0px 50px;
+}
+
+p {
+    font-size: 0.9em;
+}
+
+
+/* Button */
+
+.globalButton {
+    width: 140px;
+    margin: 40px auto;
+}
+
+.globalButton a,
+.globalButton button {
+    font-family: Isonorm D, sans-serif;
+    font-size: 1em;
+    color: black;
+    background-color: rgb(219, 132, 0);
+    border-radius: 8px;
+    border: none;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.253);
+    padding: 10px 20px;
+}
+
+.globalButton button {
+    padding: 10px 30px;
+}
+
+.globalButton a:hover,
+.globalButton button:hover {
+    background-color: #07272c;
+    color: white;
+    cursor: pointer;
+}
+
+
+/* All sections */
+
+.latestSection,
+.aboutSection,
+.signUpSection {
+    width: 320px;
+    margin: 150px auto;
+    text-align: center;
+}
+
+
+/* About section */
+
+.aboutSection p {
+    margin: 0px 10px;
+}
+
+
+/* Sign up section */
+
+form label {
+    display: none;
+}
+
+input {
+    border: 1px solid #000000;
+    border-radius: 10px;
+    width: 200px;
+    padding: 12px;
+}
+
+#email {
+    margin-top: 25px
+}
+
+input:focus {
+    border: 2px solid #000000;
+}
+
+#fullNameError,
+#emailError {
+    display: none;
+    font-size: 0.8em;
+    text-align: left;
+    color: rgb(172, 23, 23);
+    padding: 0px;
+    margin: 0px 0px 0px 50px;
+}
+
+.formContainer {}
+
+.formContainer p {
+    color: ;
+    margin: -30px 0px 40px;
 }

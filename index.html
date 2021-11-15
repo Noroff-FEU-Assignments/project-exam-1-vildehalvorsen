@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.typekit.net/kzu1jpj.css">
     <script src="https://kit.fontawesome.com/292441d70e.js" crossorigin="anonymous"></script>
     <link href="/css/global.css" rel="stylesheet" />
     <link href="/css/index.css" rel="stylesheet" />
@@ -13,10 +14,12 @@
 
 <body>
     <header>
+
         <div class="headerImage"></div>
-        <label for="hamburger-menu"><i class="fas fa-bars"></i></label>
-        <input type="checkbox" id="hamburger-menu" />
+        <i class="fas fa-bars"></i>
+        <h1><a href="/index.html">the <span>universe</span></a></h1>
         <nav>
+            <i class="fas fa-times"></i>
             <ul>
                 <li class="active">
                     <a href="/index.html">Home</a>
@@ -36,16 +39,49 @@
     <main>
         <div class="latestSection">
             <h2>Latest posts</h2>
+            <div class="latestPosts"></div>
+            <div class="images"></div>
         </div>
         <div class="aboutSection">
             <h2>About</h2>
+            <p>text her og text der text her og text der text her og text der text her og text der text her og text der text her og text der text her og text der text her og text der text her og text der text her og text der text her og text der text her
+                og text der text her og text der text her og text der text her og text der text her og text der text her og text der text her og text der text her og text der text her og text der text her og text der text her og text der text her og text
+                der text her og text der text her og text der text her og text der text her og text der text her og text der text her og text der text her og text der text her og text der text her og text der text her og text der text her og text der
+            </p>
+            <div class="globalButton">
+                <a href="/about.html">Read more</a>
+            </div>
         </div>
         <div class="signUpSection">
-            <h2>sign up to stay updated</h2>
+            <h2>Sign up to stay updated</h2>
+            <div class="formContainer">
+                <p class="info">Join our weekly mailing list and be the first to know when there is a new post or other great news about the universe.</p>
+                <form method="POST">
+                    <div>
+                        <label for="fullname">Full name*</label>
+                        <input type="text" id="fullname" name="fullname" placeholder="Jane Doe">
+                        <p id="fullNameError">Please fill in a valid name</p>
+                    </div>
+                    <div class="email">
+                        <label for="email">E-mail*</label>
+                        <input type="email" id="email" name="email" placeholder="janedoe@mail.com">
+                        <p id="emailError">Please fill in a valid e-mail address</p>
+                    </div>
+
+                    <div class="globalButton">
+                        <button id="signUpButton">Submit</button>
+                    </div>
+                </form>
+            </div>
         </div>
     </main>
-    <footer>Copyright &copy;</footer>
-    <script src=""></script>
+    <footer>
+        <p>Vilde Halvorsen</p>
+        <p>Copyright &copy;</p>
+    </footer>
+    <script src="/js/global.js"></script>
+    <script src="/js/validation.js"></script>
+    <script src="/js/index.js"></script>
 </body>
 
 </html>

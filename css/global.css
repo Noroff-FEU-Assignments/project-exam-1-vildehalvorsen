@@ -1,45 +1,112 @@
 body {
+    display: grid;
+    font-family: FranklinGothic URW, sans-serif;
     min-height: 100vh;
     margin: 0px;
+    background-color: #E4E4F0;
 }
 
-nav {
-    border-bottom: 1px solid #000;
-    margin: 0px 50px;
-}
-
-ul {
-    display: flex;
-    justify-content: space-evenly;
-    padding: 0px;
-}
-
-li {
-    display: inline;
-    margin: 0px;
+.headerImage {
+    background-image: url(/images/1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 300px;
 }
 
 a {
     text-decoration: none;
-    text-transform: uppercase;
-    font-family: "Isonorm D", sans-serif;
-    color: black;
+    color: white;
 }
 
-a:hover {}
+
+/*Logo*/
+
+h1 {
+    font-family: "Kallisto", sans-serif;
+    font-size: 1.5em;
+    position: absolute;
+    top: 7px;
+    left: 10px;
+    color: white;
+    margin: 0px;
+}
+
+span {
+    text-transform: uppercase;
+}
+
+
+/*Menu*/
+
+nav {
+    display: none;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    background-color: #07272c;
+    z-index: 1000;
+}
+
+ul {
+    display: block;
+    width: 160px;
+    margin: 0px auto;
+    padding: 100px 0px;
+    text-align: center;
+}
+
+li {
+    display: inline-block;
+    text-align: center;
+    padding: 15px 30px;
+}
+
+li:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+li a {
+    text-transform: uppercase;
+    font-family: "Isonorm D", sans-serif;
+    font-size: 1.8em;
+}
 
 .active {
     text-decoration: underline;
+    color: white;
 }
 
 
-/*Hamburger menu*/
+/*Menu bars*/
 
-#hamburger-menu,
 .fas {
-    display: none;
+    color: white;
+    font-size: 1.6em;
+    position: absolute;
+    top: 10px;
+    right: 15px;
 }
 
-#hamburger-menu:checked~nav {
-    /* display: block; */
+.fas:hover {
+    cursor: pointer;
+}
+
+.fa-times {
+    font-size: 1.8em;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #07272cc4;
+    color: white;
+    text-align: center;
+    padding: 40px 0px;
+}
+
+footer p {
+    margin: 0px;
 }
