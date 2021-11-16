@@ -45,7 +45,7 @@ nav {
     bottom: 0px;
     right: 0px;
     left: 0px;
-    background-color: #07272c;
+    background-color: #0b3b42;
     z-index: 1000;
 }
 
@@ -64,7 +64,7 @@ li {
 }
 
 li:hover {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.3);
 }
 
 li a {
@@ -81,7 +81,8 @@ li a {
 
 /*Menu bars*/
 
-.fas {
+.fa-bars,
+.fa-times {
     color: white;
     font-size: 1.6em;
     position: absolute;
@@ -95,6 +96,37 @@ li a {
 
 .fa-times {
     font-size: 1.8em;
+}
+
+
+/* Button */
+
+.globalButton {
+    width: 140px;
+    margin: 40px auto;
+}
+
+.globalButton a,
+.globalButton button {
+    font-family: Isonorm D, sans-serif;
+    font-size: 1em;
+    color: black;
+    background-color: rgb(219, 132, 0);
+    border-radius: 8px;
+    border: none;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.253);
+    padding: 10px 20px;
+}
+
+.globalButton button {
+    padding: 10px 30px;
+}
+
+.globalButton a:hover,
+.globalButton button:hover {
+    background-color: #07272c;
+    color: white;
+    cursor: pointer;
 }
 
 

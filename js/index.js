@@ -1,26 +1,49 @@
 /* Latest Post */
 
-const url = "http://vildehalvorsen.one/wp-json/wp/v2/posts?_embed/";
+const url = "http://vildehalvorsen.one/wp-json/wp/v2/posts?_embed&page/";
 const latestPosts = document.querySelector(".latestPosts");
-async function getPosts(url) {
+const rightArrow = document.querySelector("#rightArrow");
+const leftArrow = document.querySelector("#leftArrow");
 
-    const response = await fetch(url);
-    const results = await response.json();
+async function getPosts() {
+    try {
+        const response = await fetch(url);
+        const results = await response.json();
 
-    results.forEach(function(posts) {
-        latestPosts.innerHTML +=
-            `<a href="/blog.html?id=${posts.id}">
-            <h3>${posts.title.rendered}</h3>
-            </a>`;
-    })
+        for (let i = 0; i < results.length; i++) {
+            const title = results[i].title.rendered;
 
-    console.log(url)
+            console.log(results[i].id);
+
+            if (i === 3) {
+                break;
+            }
+
+            latestPosts.innerHTML += `<div class="slides">
+                                        <a href="/blog.html?id=${results[i].id}">
+                                            <img src="/">
+                                            <h3>${title}</h3>
+                                        </a>
+                                    </div>`;
+        }
+
+
+
+    } catch (error) {
+        console.log(error);
+        latestPosts.innerHTML = "OPS! something happened";
+    }
 }
 
-getPosts(url);
+
+getPosts();
 
 
 
+/* Carousel */
+rightArrow.addEventListener("click", function() {
+    latestPosts.style.overflow = "scroll";;
+});
 
 
 
@@ -59,7 +82,9 @@ function validateSignUpForm() {
 form.addEventListener("submit", validateSignUpForm);
 
 function submitSignUpForm() {
-    info.innerHTML = `Thank you for signing up!`;
+    info.innerHTML = `
+    Thank you
+    for signing up!`;
 
     form.reset();
 }

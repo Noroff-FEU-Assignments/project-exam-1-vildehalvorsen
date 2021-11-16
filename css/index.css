@@ -11,37 +11,6 @@ p {
 }
 
 
-/* Button */
-
-.globalButton {
-    width: 140px;
-    margin: 40px auto;
-}
-
-.globalButton a,
-.globalButton button {
-    font-family: Isonorm D, sans-serif;
-    font-size: 1em;
-    color: black;
-    background-color: rgb(219, 132, 0);
-    border-radius: 8px;
-    border: none;
-    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.253);
-    padding: 10px 20px;
-}
-
-.globalButton button {
-    padding: 10px 30px;
-}
-
-.globalButton a:hover,
-.globalButton button:hover {
-    background-color: #07272c;
-    color: white;
-    cursor: pointer;
-}
-
-
 /* All sections */
 
 .latestSection,
@@ -50,6 +19,41 @@ p {
     width: 320px;
     margin: 150px auto;
     text-align: center;
+}
+
+
+/* Latest posts section */
+
+.arrows {
+    position: relative;
+    top: -45px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px -35px;
+}
+
+.fa-chevron-left,
+.fa-chevron-right {
+    color: rgb(7, 39, 44);
+    font-size: 2.5em;
+}
+
+.fa-chevron-left:hover,
+.fa-chevron-right:hover {
+    color: rgba(219, 131, 0, 0.678);
+    transform: scale(1.3);
+}
+
+.latestPosts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 1px solid black;
+}
+
+.latestPosts a {
+    color: black;
+    margin: 0px 40px;
 }
 
 
