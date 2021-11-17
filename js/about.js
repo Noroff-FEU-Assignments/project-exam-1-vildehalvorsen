@@ -16,7 +16,7 @@ async function getInfo() {
         }
     } catch (error) {
         console.log(error);
-        latestPosts.innerHTML = "OPS! something happened";
+        aboutContainer.innerHTML = "OPS! something happened";
     }
 }
 

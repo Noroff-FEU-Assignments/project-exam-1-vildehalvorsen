@@ -24,7 +24,7 @@ async function getPostContent() {
 
     } catch (error) {
         console.log(error);
-        postContainer.innerHTML = ("Oh shit, something happened!");
+        postContainer.innerHTML = "OPS! something happened";
     }
 }
 
