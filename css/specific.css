@@ -1,0 +1,18 @@
+.content {
+    width: 320px;
+    margin: 100px auto;
+}
+
+.wp-block-image {
+    padding: 0px;
+    margin: 0px;
+}
+
+.content img {
+    height: 250px;
+    width: 320px;
+}
+
+.content p {
+    text-align: justify;
+}

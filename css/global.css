@@ -1,6 +1,6 @@
 body {
     display: grid;
-    font-family: FranklinGothic URW, sans-serif;
+    font-family: franklin-gothic-urw, sans-serif;
     min-height: 100vh;
     margin: 0px;
     background-color: #E4E4F0;
@@ -18,10 +18,22 @@ a {
     color: white;
 }
 
+h1,
+h2 {
+    font-family: rubrik-new, sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h3 {
+    font-family: sans-serif;
+}
+
 
 /*Logo*/
 
-h1 {
+.logo {
     font-family: "Kallisto", sans-serif;
     font-size: 1.5em;
     position: absolute;
@@ -31,8 +43,9 @@ h1 {
     margin: 0px;
 }
 
-span {
+.logo span {
     text-transform: uppercase;
+    font-weight: bold;
 }
 
 
@@ -127,6 +140,33 @@ li a {
     background-color: #07272c;
     color: white;
     cursor: pointer;
+}
+
+
+/* Loader */
+
+.fa-star {
+    font-size: 2em;
+    color: #0b3b42;
+}
+
+.loader {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0px;
+    animation: loader 0.7s infinite;
+}
+
+@keyframes loader {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-40px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
 }
 
 

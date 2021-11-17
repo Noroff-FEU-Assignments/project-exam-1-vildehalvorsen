@@ -12,6 +12,7 @@ async function getPosts() {
 
         for (let i = 0; i < results.length; i++) {
             const title = results[i].title.rendered;
+            const content = results[i].content.rendered;
 
             console.log(results[i].id);
 
@@ -20,8 +21,8 @@ async function getPosts() {
             }
 
             latestPosts.innerHTML += `<div class="slides">
-                                        <a href="/blog.html?id=${results[i].id}">
-                                            <img src="/">
+                                        <a href="/specific.html?id=${results[i].id}">
+                                            <div>${content}</div>
                                             <h3>${title}</h3>
                                         </a>
                                     </div>`;
@@ -37,13 +38,6 @@ async function getPosts() {
 
 
 getPosts();
-
-
-
-/* Carousel */
-rightArrow.addEventListener("click", function() {
-    latestPosts.style.overflow = "scroll";;
-});
 
 
 

@@ -1,0 +1,18 @@
+.aboutContainer {
+    width: 320px;
+    margin: 100px auto;
+}
+
+.wp-block-image {
+    padding: 0px;
+    margin: 0px;
+}
+
+.aboutContainer img {
+    height: 250px;
+    width: 320px;
+}
+
+.aboutContainer p {
+    text-align: justify;
+}
