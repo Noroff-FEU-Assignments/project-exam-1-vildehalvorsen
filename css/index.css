@@ -16,7 +16,7 @@ p {
 .latestSection,
 .aboutSection,
 .signUpSection {
-    width: 320px;
+    width: 280px;
     margin: 150px auto;
     text-align: center;
 }
@@ -25,15 +25,17 @@ p {
 /* Latest posts section */
 
 .arrows {
+    display: none;
     position: relative;
     top: -45px;
     display: flex;
     justify-content: space-between;
-    margin: 0px -35px;
+    margin: 0px;
 }
 
 .fa-chevron-left,
 .fa-chevron-right {
+    display: none;
     color: rgb(7, 39, 44);
     font-size: 2.5em;
 }
@@ -46,14 +48,18 @@ p {
 
 .latestPosts {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    border: 1px solid black;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
 }
 
 .latestPosts a {
     color: black;
     margin: 0px 40px;
+}
+
+.slides {
+    margin-right: 25px;
 }
 
 .slides p {
@@ -66,8 +72,8 @@ p {
 }
 
 .slides img {
-    height: 250px;
-    width: 320px;
+    height: 230px;
+    width: 280px;
 }
 
 

@@ -2,8 +2,7 @@
 
 const url = "https://vildehalvorsen.one/wp-json/wp/v2/posts?_embed&page/";
 const latestPosts = document.querySelector(".latestPosts");
-const rightArrow = document.querySelector("#rightArrow");
-const leftArrow = document.querySelector("#leftArrow");
+
 
 async function getPosts() {
     try {
@@ -15,10 +14,6 @@ async function getPosts() {
             const content = results[i].content.rendered;
 
             console.log(results[i].id);
-
-            if (i === 3) {
-                break;
-            }
 
             latestPosts.innerHTML += `<div class="slides">
                                         <a href="/specific.html?id=${results[i].id}">
@@ -37,6 +32,41 @@ async function getPosts() {
 
 getPosts();
 
+
+/* Slide Function */
+
+const rightArrow = document.querySelector("#rightArrow");
+const leftArrow = document.querySelector("#leftArrow");
+
+
+rightArrow.addEventListener("click", function() {
+    let pixel;
+
+    if (window.screen.width < 400) {
+        pixel = 10;
+    } else if (window.screen.width < 600) {
+        pixel = 50;
+    } else {
+        pixel = 200;
+    }
+
+    latestPosts.scrollLeft += pixel;
+});
+
+
+leftArrow.addEventListener("click", function() {
+    let pixel;
+
+    if (window.screen.width < 400) {
+        pixel = 200;
+    } else if (window.screen.width < 600) {
+        pixel = 50;
+    } else {
+        pixel = 5;
+    }
+
+    latestPosts.scrollLeft -= pixel;
+});
 
 
 /* Sign Up Function*/
@@ -81,4 +111,4 @@ function submitSignUpForm() {
     form.reset();
 }
 
-/* some functions are found in the validation.js-file */
+/* some functions are found in the validation.js-file in validation folder */

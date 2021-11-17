@@ -1,5 +1,5 @@
 .content {
-    width: 320px;
+    width: 280px;
     margin: 100px auto;
 }
 
@@ -9,10 +9,29 @@
 }
 
 .content img {
-    height: 250px;
-    width: 320px;
+    height: 230px;
+    width: 280px;
 }
 
 .content p {
     text-align: justify;
+}
+
+
+/* Modal */
+
+.modal {
+    display: none;
+    z-index: 100000;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+.modal img {
+    height: 280px;
+    width: 320px;
 }

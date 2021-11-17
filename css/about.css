@@ -1,5 +1,5 @@
 .aboutContainer {
-    width: 320px;
+    width: 280px;
     margin: 100px auto;
 }
 
@@ -10,7 +10,7 @@
 
 .aboutContainer img {
     height: 250px;
-    width: 320px;
+    width: 280px;
 }
 
 .aboutContainer p {
