@@ -8,7 +8,7 @@ const headTitle = document.querySelector("title");
 const headMetaText = document.querySelector("head");
 
 const postContainer = document.querySelector(".postContainer");
-const url = "http://vildehalvorsen.one/wp-json/wp/v2/posts/" + postID;
+const url = "https://vildehalvorsen.one/wp-json/wp/v2/posts/" + postID;
 
 
 async function getPostContent() {

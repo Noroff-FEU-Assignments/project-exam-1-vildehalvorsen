@@ -1,4 +1,4 @@
-const url = "http://vildehalvorsen.one/wp-json/wp/v2/pages/";
+const url = "https://vildehalvorsen.one/wp-json/wp/v2/pages/";
 const aboutContainer = document.querySelector(".aboutContainer");
 
 

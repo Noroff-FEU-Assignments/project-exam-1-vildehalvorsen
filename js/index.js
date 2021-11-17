@@ -1,6 +1,6 @@
 /* Latest Post */
 
-const url = "http://vildehalvorsen.one/wp-json/wp/v2/posts?_embed&page/";
+const url = "https://vildehalvorsen.one/wp-json/wp/v2/posts?_embed&page/";
 const latestPosts = document.querySelector(".latestPosts");
 const rightArrow = document.querySelector("#rightArrow");
 const leftArrow = document.querySelector("#leftArrow");
@@ -27,8 +27,6 @@ async function getPosts() {
                                         </a>
                                     </div>`;
         }
-
-
 
     } catch (error) {
         console.log(error);
