@@ -185,3 +185,50 @@ footer {
 footer p {
     margin: 0px;
 }
+
+
+/* Media queries */
+
+@media all and (min-width: 600px) {
+    .headerImage {
+        height: 400px;
+    }
+    /*Logo*/
+    .logo {
+        font-size: 1.6em;
+    }
+    /*Menu*/
+    nav {
+        display: initial;
+        position: initial;
+        background-color: white;
+        border-bottom: 1px solid black;
+        padding: 10px 0px;
+    }
+    ul {
+        display: inline-block;
+        width: 100%;
+        margin: 0px auto;
+        padding: 0px;
+    }
+    li {
+        display: initial;
+        text-align: none;
+        padding: 10px 25px;
+    }
+    li:hover {
+        background-color: #13677483;
+    }
+    li a {
+        color: black;
+        font-size: 1.3em;
+    }
+    .active {
+        color: black;
+    }
+    /*Menu bars*/
+    .fa-bars,
+    .fa-times {
+        display: none;
+    }
+}

@@ -43,9 +43,9 @@ rightArrow.addEventListener("click", function() {
     let pixel;
 
     if (window.screen.width < 400) {
-        pixel = 10;
+        pixel = 220;
     } else if (window.screen.width < 600) {
-        pixel = 50;
+        pixel = 230;
     } else {
         pixel = 200;
     }
@@ -58,11 +58,11 @@ leftArrow.addEventListener("click", function() {
     let pixel;
 
     if (window.screen.width < 400) {
-        pixel = 200;
+        pixel = 220;
     } else if (window.screen.width < 600) {
-        pixel = 50;
+        pixel = 230;
     } else {
-        pixel = 5;
+        pixel = 200;
     }
 
     latestPosts.scrollLeft -= pixel;
@@ -104,9 +104,7 @@ function validateSignUpForm() {
 form.addEventListener("submit", validateSignUpForm);
 
 function submitSignUpForm() {
-    info.innerHTML = `
-    Thank you
-    for signing up!`;
+    info.innerHTML = `Thank you for signing up!`;
 
     form.reset();
 }

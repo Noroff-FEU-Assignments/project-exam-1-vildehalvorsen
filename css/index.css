@@ -10,6 +10,10 @@ p {
     font-size: 0.9em;
 }
 
+header {
+    margin-bottom: 0px;
+}
+
 
 /* All sections */
 
@@ -27,30 +31,32 @@ p {
 .arrows {
     display: none;
     position: relative;
-    top: -45px;
+    top: -150px;
     display: flex;
     justify-content: space-between;
-    margin: 0px;
+    margin: 0px 0px;
 }
 
 .fa-chevron-left,
 .fa-chevron-right {
-    display: none;
+    display: ;
     color: rgb(7, 39, 44);
     font-size: 2.5em;
 }
 
 .fa-chevron-left:hover,
 .fa-chevron-right:hover {
-    color: rgba(219, 131, 0, 0.678);
+    color: rgba(219, 131, 0, 0.6);
     transform: scale(1.3);
 }
 
 .latestPosts {
     display: flex;
     flex-wrap: nowrap;
-    overflow-x: scroll;
+    overflow: hidden;
     scroll-behavior: smooth;
+    width: 220px;
+    margin: 0px auto;
 }
 
 .latestPosts a {
@@ -59,7 +65,11 @@ p {
 }
 
 .slides {
-    margin-right: 25px;
+    margin: 0px 10px;
+}
+
+.slides:hover {
+    transform: scale(1.05);
 }
 
 .slides p {
@@ -72,8 +82,8 @@ p {
 }
 
 .slides img {
-    height: 230px;
-    width: 280px;
+    height: 150px;
+    width: 200px;
 }
 
 
@@ -112,9 +122,69 @@ input:focus {
     text-align: left;
     color: rgb(172, 23, 23);
     padding: 0px;
-    margin: 0px 0px 0px 50px;
+    margin: 0px 0px 0px 30px;
 }
 
 .formContainer p {
-    margin: -30px 0px 40px;
+    margin: -20px 0px 40px;
+}
+
+
+/* Media Queries */
+
+@media all and (min-width: 500px) {
+    h2 {
+        font-weight: bold;
+        font-size: 2em;
+    }
+    p {
+        font-size: 1em;
+    }
+    /* All sections */
+    .latestSection,
+    .aboutSection,
+    .signUpSection {
+        width: 400px;
+        margin: 150px auto;
+        text-align: center;
+    }
+    /* Latest posts section */
+    .latestPosts {
+        width: 330px;
+    }
+    .slides img {
+        height: 170px;
+        width: 220px;
+    }
+    /* Sign up section */
+    #fullNameError,
+    #emailError {
+        margin: 0px 0px 0px 90px;
+    }
+}
+
+@media all and (min-width: 600px) {
+    /* All sections */
+    .latestSection,
+    .aboutSection,
+    .signUpSection {
+        width: 500px;
+        margin: 170px auto;
+    }
+    /* Latest posts section */
+    .latestPosts {
+        width: 400px;
+    }
+    /* Sign up section */
+    input {
+        width: 220px;
+    }
+    #fullNameError,
+    #emailError {
+        margin-left: 130px;
+    }
+    .formContainer p {
+        margin: -20px auto 40px;
+        width: 400px;
+    }
 }
