@@ -1,0 +1,75 @@
+.blogContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 100px auto;
+}
+
+.blogList {
+    margin: 50px auto;
+}
+
+.blogList:hover {
+    transform: scale(1.04);
+}
+
+h3 {
+    color: black;
+    background-color: rgba(255, 255, 255, 0.6);
+    text-align: center;
+}
+
+.blogContainer p {
+    display: none;
+}
+
+.wp-block-image {
+    padding: 0px;
+    margin: 0px;
+}
+
+img {
+    height: 200px;
+    width: 300px;
+}
+
+
+/* Media Queries */
+
+@media all and (min-width: 500px) {
+    img {
+        height: 300px;
+        width: 400px;
+    }
+}
+
+@media all and (min-width: 600px) {
+    img {
+        height: 325px;
+        width: 450px;
+    }
+}
+
+@media all and (min-width: 700px) {
+    img {
+        height: 350px;
+        width: 500px;
+    }
+    h3 {
+        font-size: 1.5em;
+        padding: 30px 20px;
+    }
+}
+
+@media all and (min-width: 800px) {
+    img {
+        height: 400x;
+        width: 550px;
+    }
+}
+
+@media all and (min-width: 1000px) {
+    img {
+        height: 475px;
+        width: 700px;
+    }
+}

@@ -39,8 +39,7 @@ header {
 
 .fa-chevron-left,
 .fa-chevron-right {
-    display: ;
-    color: rgb(7, 39, 44);
+    color: rgb(7, 39, 44, 0.6);
     font-size: 2.5em;
 }
 
@@ -70,6 +69,12 @@ header {
 
 .slides:hover {
     transform: scale(1.05);
+}
+
+.slides h3 {
+    background-color: white;
+    padding: 20px 10px;
+    margin-top: -25px;
 }
 
 .slides p {
@@ -157,9 +162,13 @@ input:focus {
         width: 220px;
     }
     /* Sign up section */
+    form {
+        width: 225px;
+        margin: 0px auto;
+    }
     #fullNameError,
     #emailError {
-        margin: 0px 0px 0px 90px;
+        margin: 0px;
     }
 }
 
@@ -179,12 +188,108 @@ input:focus {
     input {
         width: 220px;
     }
-    #fullNameError,
-    #emailError {
-        margin-left: 130px;
-    }
     .formContainer p {
         margin: -20px auto 40px;
         width: 400px;
+    }
+    form {
+        width: 246px;
+        margin: 0px auto;
+    }
+}
+
+@media all and (min-width: 700px) {
+    /* All sections */
+    .latestSection,
+    .aboutSection,
+    .signUpSection {
+        width: 600px;
+    }
+    /* Latest posts section */
+    .latestPosts {
+        width: 500px;
+    }
+}
+
+@media all and (min-width: 800px) {
+    /* Latest posts section */
+    .latestSection {
+        width: 750px;
+    }
+    .latestPosts {
+        width: 650px;
+    }
+    .slides img {
+        height: 200px;
+        width: 250px;
+    }
+}
+
+@media all and (min-width: 1000px) {
+    p {
+        font-size: 1.1em;
+    }
+    /* Latest posts section */
+    .latestSection {
+        width: 850px;
+    }
+    .latestPosts {
+        width: 750px;
+    }
+    .slides img {
+        height: 220px;
+        width: 270px;
+    }
+}
+
+@media all and (min-width: 1100px) {
+    /* Latest posts section */
+    .latestSection {
+        width: 950px;
+    }
+    .latestPosts {
+        width: 850px;
+    }
+    .slides img {
+        height: 240px;
+        width: 290px;
+    }
+}
+
+@media all and (min-width: 1200px) {
+    /* Latest posts section */
+    .latestSection {
+        width: 1050px;
+    }
+    .latestPosts {
+        width: 950px;
+    }
+    .slides img {
+        height: 300px;
+        width: 350px;
+    }
+}
+
+@media all and (min-width: 1300px) {
+    /* Latest posts section */
+    .latestSection {
+        width: 1150px;
+    }
+    .latestPosts {
+        width: 1050px;
+    }
+    .slides img {
+        height: 350px;
+        width: 400px;
+    }
+}
+
+@media all and (min-width: 1400px) {
+    /* Latest posts section */
+    .latestSection {
+        width: 1250px;
+    }
+    .latestPosts {
+        width: 1150px;
     }
 }

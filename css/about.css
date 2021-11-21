@@ -9,10 +9,64 @@
 }
 
 .aboutContainer img {
-    height: 250px;
+    height: 220px;
     width: 280px;
 }
 
 .aboutContainer p {
     text-align: justify;
+}
+
+@media all and (min-width: 500px) {
+    .aboutContainer {
+        width: 350px;
+        margin: 150px auto;
+    }
+    .aboutContainer img {
+        height: 280px;
+        width: 350px;
+    }
+}
+
+@media all and (min-width: 600px) {
+    .aboutContainer {
+        width: 450px;
+    }
+    .wp-block-image {
+        margin: 40px 0px;
+    }
+    .aboutContainer img {
+        height: 350px;
+        width: 450px;
+    }
+    .aboutContainer p {
+        font-size: 1.1em;
+    }
+}
+
+@media all and (min-width: 700px) {
+    .aboutContainer {
+        width: 550px;
+        margin: 170px auto;
+    }
+    .aboutContainer img {
+        height: 430px;
+        width: 550px;
+    }
+    .aboutContainer p {
+        font-size: 1.2em;
+    }
+}
+
+@media all and (min-width: 800px) {
+    .aboutContainer {
+        width: 650px;
+    }
+    .wp-block-image {
+        margin: 60px 0px;
+    }
+    .aboutContainer img {
+        height: 500px;
+        width: 650px;
+    }
 }

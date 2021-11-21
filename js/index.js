@@ -47,7 +47,7 @@ rightArrow.addEventListener("click", function() {
     } else if (window.screen.width < 600) {
         pixel = 230;
     } else {
-        pixel = 200;
+        pixel = 600;
     }
 
     latestPosts.scrollLeft += pixel;
@@ -62,7 +62,7 @@ leftArrow.addEventListener("click", function() {
     } else if (window.screen.width < 600) {
         pixel = 230;
     } else {
-        pixel = 200;
+        pixel = 600;
     }
 
     latestPosts.scrollLeft -= pixel;

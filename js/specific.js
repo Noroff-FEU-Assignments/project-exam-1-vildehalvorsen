@@ -10,6 +10,7 @@ const headMetaText = document.querySelector("head");
 const postContainer = document.querySelector(".postContainer");
 const url = "https://vildehalvorsen.one/wp-json/wp/v2/posts/" + postID;
 
+const blogPostTitle = document.querySelector("#blogPostTitle");
 
 async function getPostContent() {
     try {
@@ -34,11 +35,13 @@ function createPostHTML(results) {
     headTitle.innerText = `the UNIVERSE | ${results.title.rendered}`;
     headMetaText.innerHTML += `<meta name="description" content="${results.title.rendered}">`;
 
-    postContainer.innerHTML = `
-                            <div class="content">
+    blogPostTitle.innerHTML = `${results.title.rendered}`;
+
+    postContainer.innerHTML = `<div class="content">
                                     <h1>${results.title.rendered}</h1>
                                     <p>${results.content.rendered}</p>
-                            </div>`;
+                                </div>`;
+
 }
 
 
@@ -53,3 +56,6 @@ postContainer.onclick = function() {
 modal.onclick = function() {
     modal.style.display = "none";
 }
+
+
+/* Site Navigation */
