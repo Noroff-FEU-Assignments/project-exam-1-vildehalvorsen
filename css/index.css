@@ -79,9 +79,13 @@ header {
 
 .slides h4,
 .slides p,
-.slides ol,
 .slides li {
     display: none;
+}
+
+.slides ol {
+    padding: 0px;
+    margin: 0px;
 }
 
 .slides .wp-block-image {
