@@ -78,7 +78,8 @@ header {
 }
 
 .slides h4,
-.slides p {
+.slides p,
+.slides li {
     display: none;
 }
 
