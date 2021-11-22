@@ -79,6 +79,7 @@ header {
 
 .slides h4,
 .slides p,
+.slides ol,
 .slides li {
     display: none;
 }
