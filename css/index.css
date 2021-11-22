@@ -77,7 +77,11 @@ header {
     margin-top: -25px;
 }
 
-.slides p {
+.slides h2,
+.slides h3,
+.slides h4,
+.slides p,
+.slides li {
     display: none;
 }
 
