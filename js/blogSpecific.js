@@ -47,15 +47,15 @@ function createPostHTML(results) {
 
 /* Image modal */
 
-const modal = document.querySelector(".modal");
 
-postContainer.onclick = function() {
-    modal.style.display = "initial";
-}
-
-modal.onclick = function() {
-    modal.style.display = "none";
-}
+// const image = document.querySelector(".wp-block-image");
+// const modal = document.querySelector(".modal");
 
 
-/* Site Navigation */
+// image.onclick = function() {
+//     modal.style.display = "initial";
+// }
+
+// modal.onclick = function() {
+//     modal.style.display = "none";
+// }

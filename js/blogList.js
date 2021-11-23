@@ -1,11 +1,17 @@
-const url = "https://vildehalvorsen.one/wp-json/wp/v2/posts?per_page=" + 5;
+let pageNumber = 5;
+
+function countNumber() {
+    pageNumber += 5;
+}
+
+const url = "https://vildehalvorsen.one/wp-json/wp/v2/posts?per_page=";
 const blogContainer = document.querySelector(".blogContainer");
-const loadMoreButton = document.querySelector(".loadMoreButton");
+const loadButton = document.querySelector("#loadMoreButton");
+
 
 async function getList() {
-
     try {
-        const response = await fetch(url);
+        const response = await fetch(url + pageNumber);
         const results = await response.json();
 
         blogContainer.innerHTML = "";
@@ -30,5 +36,10 @@ async function getList() {
     }
 }
 
-
 getList();
+
+loadButton.addEventListener("click", function() {
+    countNumber();
+    getList()
+
+});

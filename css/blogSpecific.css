@@ -17,6 +17,10 @@
     text-align: justify;
 }
 
+.content a {
+    color: black;
+}
+
 
 /* Modal */
 
