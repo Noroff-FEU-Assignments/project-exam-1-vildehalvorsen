@@ -77,6 +77,10 @@ header {
     margin-top: -25px;
 }
 
+.slides a div {
+    padding: 20px 0px;
+}
+
 .slides h4,
 .slides p,
 .slides li {
