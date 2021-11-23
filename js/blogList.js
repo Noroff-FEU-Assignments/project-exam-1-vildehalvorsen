@@ -7,6 +7,7 @@ function countNumber() {
 const url = "https://vildehalvorsen.one/wp-json/wp/v2/posts?per_page=";
 const blogContainer = document.querySelector(".blogContainer");
 const loadButton = document.querySelector("#loadMoreButton");
+const globalButton = document.querySelector(".globalButton");
 
 
 async function getList() {
@@ -29,17 +30,24 @@ async function getList() {
                                             </a>
                                         </div>`;
 
+            if (pageNumber > results.length) {
+                loadButton.innerText = "All good";
+                loadButton.style = `background-color: grey;
+                                    cursor: initial;`;
+
+            }
         }
     } catch (error) {
         console.log(error);
-        blogContainer.innerHTML = "OPS! something happened";
+        blogContainer.innerHTML = error + errorMessage();
     }
+
+
 }
 
 getList();
 
 loadButton.addEventListener("click", function() {
     countNumber();
-    getList()
-
+    getList();
 });

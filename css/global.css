@@ -54,7 +54,7 @@ h3 {
 
 nav {
     display: none;
-    position: absolute;
+    position: fixed;
     top: 0px;
     bottom: 0px;
     right: 0px;
@@ -219,7 +219,7 @@ footer p {
     }
     /*Menu*/
     nav {
-        display: inherit;
+        display: block;
         position: initial;
         background-color: #b6d4dd;
         padding: 20px 0px;
@@ -287,7 +287,7 @@ footer p {
     }
     /*Menu*/
     li {
-        padding: 23px 30px;
+        padding: 23px 30px 21px;
     }
     li a {
         font-size: 1.2em;

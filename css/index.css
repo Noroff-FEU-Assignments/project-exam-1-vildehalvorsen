@@ -222,6 +222,9 @@ input:focus {
     .latestSection {
         width: 850px;
     }
+    .arrows {
+        top: -230px;
+    }
     .latestPosts {
         width: 750px;
     }
