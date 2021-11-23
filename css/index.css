@@ -1,5 +1,4 @@
 h2 {
-    font-family: "Isonorm D", sans-serif;
     text-transform: uppercase;
     font-size: 1.8em;
     text-align: center;
@@ -8,10 +7,6 @@ h2 {
 
 p {
     font-size: 0.9em;
-}
-
-header {
-    margin-bottom: 0px;
 }
 
 
@@ -30,41 +25,24 @@ header {
 
 .arrows {
     display: none;
-    position: relative;
-    top: -150px;
-    display: flex;
-    justify-content: space-between;
-    margin: 0px 0px;
 }
 
-.fa-chevron-left,
-.fa-chevron-right {
-    color: rgb(7, 39, 44, 0.6);
-    font-size: 2.5em;
-}
-
-.fa-chevron-left:hover,
-.fa-chevron-right:hover {
-    color: rgba(219, 131, 0, 0.6);
-    transform: scale(1.3);
+.latestSection {
+    width: 300px;
 }
 
 .latestPosts {
     display: flex;
     flex-wrap: nowrap;
-    overflow: hidden;
+    overflow-y: hidden;
+    overflow-x: scroll;
     scroll-behavior: smooth;
-    width: 220px;
+    width: 300px;
     margin: 0px auto;
 }
 
-.latestPosts a {
-    color: black;
-    margin: 0px 40px;
-}
-
 .slides {
-    margin: 0px 10px;
+    margin: 10px;
 }
 
 .slides:hover {
@@ -72,18 +50,16 @@ header {
 }
 
 .slides h3 {
-    background-color: white;
-    padding: 20px 10px;
-    margin-top: -25px;
-}
-
-.slides a div {
+    background-color: #b6d4dd;
+    color: black;
     padding: 20px 0px;
+    margin-top: -10px;
 }
 
 .slides h4,
 .slides p,
-.slides li {
+.slides li,
+.slides ol {
     display: none;
 }
 
@@ -93,19 +69,25 @@ header {
 }
 
 .slides img {
-    height: 150px;
-    width: 200px;
+    height: 180px;
+    width: 250px;
 }
 
 
 /* About section */
 
 .aboutSection p {
-    margin: 0px 10px;
+    font-size: 1.15em;
+    padding-bottom: 20px;
 }
 
 
 /* Sign up section */
+
+form {
+    width: 225px;
+    margin: 0px auto;
+}
 
 form label {
     display: none;
@@ -133,7 +115,7 @@ input:focus {
     text-align: left;
     color: rgb(172, 23, 23);
     padding: 0px;
-    margin: 0px 0px 0px 30px;
+    margin: 0px;
 }
 
 .formContainer p {
@@ -144,10 +126,6 @@ input:focus {
 /* Media Queries */
 
 @media all and (min-width: 500px) {
-    h2 {
-        font-weight: bold;
-        font-size: 2em;
-    }
     p {
         font-size: 1em;
     }
@@ -161,20 +139,7 @@ input:focus {
     }
     /* Latest posts section */
     .latestPosts {
-        width: 330px;
-    }
-    .slides img {
-        height: 170px;
-        width: 220px;
-    }
-    /* Sign up section */
-    form {
-        width: 225px;
-        margin: 0px auto;
-    }
-    #fullNameError,
-    #emailError {
-        margin: 0px;
+        width: 400px;
     }
 }
 
@@ -188,7 +153,7 @@ input:focus {
     }
     /* Latest posts section */
     .latestPosts {
-        width: 400px;
+        width: 500px;
     }
     /* Sign up section */
     input {
@@ -213,7 +178,7 @@ input:focus {
     }
     /* Latest posts section */
     .latestPosts {
-        width: 500px;
+        width: 600px;
     }
 }
 
@@ -222,12 +187,30 @@ input:focus {
     .latestSection {
         width: 750px;
     }
+    .arrows {
+        position: relative;
+        top: -190px;
+        display: flex;
+        justify-content: space-between;
+        margin: 0px 0px;
+    }
+    .fa-chevron-left,
+    .fa-chevron-right {
+        color: rgb(7, 39, 44, 0.6);
+        font-size: 2.5em;
+    }
+    .fa-chevron-left:hover,
+    .fa-chevron-right:hover {
+        color: rgba(219, 131, 0, 0.6);
+        transform: scale(1.3);
+    }
     .latestPosts {
         width: 650px;
+        overflow-x: hidden;
     }
     .slides img {
-        height: 200px;
-        width: 250px;
+        height: 250px;
+        width: 300px;
     }
 }
 
@@ -243,8 +226,8 @@ input:focus {
         width: 750px;
     }
     .slides img {
-        height: 220px;
-        width: 270px;
+        height: 300px;
+        width: 350px;
     }
 }
 
@@ -256,10 +239,6 @@ input:focus {
     .latestPosts {
         width: 850px;
     }
-    .slides img {
-        height: 240px;
-        width: 290px;
-    }
 }
 
 @media all and (min-width: 1200px) {
@@ -270,32 +249,28 @@ input:focus {
     .latestPosts {
         width: 950px;
     }
-    .slides img {
-        height: 300px;
-        width: 350px;
-    }
 }
 
 @media all and (min-width: 1300px) {
     /* Latest posts section */
     .latestSection {
-        width: 1150px;
+        width: 1200px;
     }
     .latestPosts {
-        width: 1050px;
-    }
-    .slides img {
-        height: 350px;
-        width: 400px;
+        width: 1100px;
     }
 }
 
 @media all and (min-width: 1400px) {
     /* Latest posts section */
     .latestSection {
-        width: 1250px;
+        width: 1300px;
     }
     .latestPosts {
-        width: 1150px;
+        width: 1200px;
+    }
+    .slides img {
+        height: 330px;
+        width: 380px;
     }
 }

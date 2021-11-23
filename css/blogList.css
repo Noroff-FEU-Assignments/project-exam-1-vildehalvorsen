@@ -4,21 +4,26 @@
     margin: 100px auto;
 }
 
-.blogList {
-    margin: 50px auto;
+.blogPost {
+    margin: 50px auto 20px;
 }
 
-.blogList:hover {
+.blogPost:hover {
     transform: scale(1.04);
 }
 
 h3 {
+    background-color: #b6d4dd;
     color: black;
-    background-color: rgba(255, 255, 255, 0.6);
     text-align: center;
+    padding: 20px 0px;
+    margin-top: -10px;
 }
 
-.blogContainer p {
+.blogContainer h4,
+.blogContainer p,
+.blogContainer li,
+.blogContainer ol {
     display: none;
 }
 
@@ -30,6 +35,10 @@ h3 {
 img {
     height: 200px;
     width: 300px;
+}
+
+footer {
+    margin-top: 100px;
 }
 
 

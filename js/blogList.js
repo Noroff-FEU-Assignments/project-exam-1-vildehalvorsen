@@ -1,8 +1,9 @@
-const url = "https://vildehalvorsen.one/wp-json/wp/v2/posts?_embed&page/";
+const url = "https://vildehalvorsen.one/wp-json/wp/v2/posts?per_page=" + 5;
 const blogContainer = document.querySelector(".blogContainer");
-
+const loadMoreButton = document.querySelector(".loadMoreButton");
 
 async function getList() {
+
     try {
         const response = await fetch(url);
         const results = await response.json();
@@ -15,18 +16,17 @@ async function getList() {
 
             console.log(results[i].id);
 
-
-            blogContainer.innerHTML += `<div class="blogList">
-                                            <a href="/specific.html?id=${results[i].id}">
+            blogContainer.innerHTML += `<div class="blogPost">
+                                            <a href="/blogSpecific.html?id=${results[i].id}">
                                                 <div>${content}</div>
                                                 <h3>${title}</h3>    
                                             </a>
                                         </div>`;
-        }
 
+        }
     } catch (error) {
         console.log(error);
-        latestPosts.innerHTML = "OPS! something happened";
+        blogContainer.innerHTML = "OPS! something happened";
     }
 }
 

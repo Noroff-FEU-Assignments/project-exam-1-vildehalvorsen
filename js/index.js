@@ -2,7 +2,7 @@
 
 const url = "https://vildehalvorsen.one/wp-json/wp/v2/posts?_embed&page/";
 const latestPosts = document.querySelector(".latestPosts");
-
+const arrows = document.querySelector(".arrows");
 
 async function getPosts() {
     try {
@@ -16,7 +16,7 @@ async function getPosts() {
             console.log(results[i].id);
 
             latestPosts.innerHTML += `<div class="slides">
-                                        <a href="/specific.html?id=${results[i].id}">
+                                        <a href="/blogSpecific.html?id=${results[i].id}">
                                             <div>${content}</div>
                                             <h3>${title}</h3>
                                         </a>
@@ -25,7 +25,16 @@ async function getPosts() {
 
     } catch (error) {
         console.log(error);
-        latestPosts.innerHTML = "OPS! something happened";
+        latestPosts.innerHTML = error + errorMessage();
+
+        if (error) {
+            latestPosts.style = `flex-direction: column;
+                                flex-wrap: wrap;
+                                color: red;
+                                text-align: center;
+                                overflow: visible;`;
+            arrows.style.display = "none";
+        }
     }
 }
 
@@ -42,12 +51,14 @@ const leftArrow = document.querySelector("#leftArrow");
 rightArrow.addEventListener("click", function() {
     let pixel;
 
-    if (window.screen.width < 400) {
-        pixel = 220;
-    } else if (window.screen.width < 600) {
-        pixel = 230;
+    if (window.innerWidth < 1000) {
+        pixel = 640;
+    } else if (window.innerWidth < 1300) {
+        pixel = 740;
+    } else if (window.innerWidth < 1400) {
+        pixel = 1110;
     } else {
-        pixel = 220;
+        pixel = 1200;
     }
 
     latestPosts.scrollLeft += pixel;
@@ -57,12 +68,14 @@ rightArrow.addEventListener("click", function() {
 leftArrow.addEventListener("click", function() {
     let pixel;
 
-    if (window.screen.width < 400) {
-        pixel = 220;
-    } else if (window.screen.width < 600) {
-        pixel = 230;
+    if (window.innerWidth < 1000) {
+        pixel = 640;
+    } else if (window.innerWidth < 1300) {
+        pixel = 740;
+    } else if (window.innerWidth < 1400) {
+        pixel = 1110;
     } else {
-        pixel = 220;
+        pixel = 1200;
     }
 
     latestPosts.scrollLeft -= pixel;

@@ -1,321 +1,326 @@
-    body {
-        display: grid;
-        font-family: franklin-gothic-urw, sans-serif;
-        min-height: 100vh;
-        margin: 0px;
-        background-color: #E4E4F0;
+body {
+    display: grid;
+    font-family: franklin-gothic-urw, sans-serif;
+    background-color: whitesmoke;
+    min-height: 100vh;
+    margin: 0px;
+}
+
+.headerImage {
+    background-image: url(/images/1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+h1,
+h2 {
+    font-family: marine-up, sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h3 {
+    font-family: marine-up, sans-serif;
+    font-weight: 400;
+}
+
+
+/*Logo*/
+
+.logo {
+    font-family: "Kallisto", sans-serif;
+    font-size: 1.5em;
+    position: absolute;
+    top: 7px;
+    left: 10px;
+    color: white;
+    margin: 0px;
+}
+
+.logo span {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+/*Menu*/
+
+nav {
+    display: none;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    background-color: #1e3b44;
+    z-index: 1000;
+}
+
+ul {
+    width: 160px;
+    margin: 0px auto;
+    padding: 100px 0px;
+    text-align: center;
+}
+
+li {
+    display: block;
+    padding: 15px 30px;
+}
+
+li:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+li a {
+    text-transform: uppercase;
+    font-family: Isonorm D, marine-up, sans-serif;
+    font-size: 1.8em;
+}
+
+.active {
+    text-decoration: underline;
+    color: white;
+}
+
+
+/*Menu bars*/
+
+.fa-bars,
+.fa-times {
+    color: white;
+    font-size: 1.6em;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+}
+
+.fas:hover {
+    cursor: pointer;
+}
+
+.fa-times {
+    font-size: 1.8em;
+}
+
+
+/* Site navigation Blog / Blog specific*/
+
+.siteNav {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.siteNav a {
+    font-size: 0.9em;
+    color: rgb(63, 63, 63);
+    padding: 0px 10px;
+    text-decoration: underline;
+}
+
+.siteNav p {
+    color: rgb(63, 63, 63);
+    margin: 0px;
+}
+
+#blogPostTitle {
+    text-decoration: none;
+}
+
+
+/* Button */
+
+.globalButton {
+    width: 140px;
+    margin: 40px auto;
+}
+
+.globalButton a,
+.globalButton button {
+    font-size: 1em;
+    color: black;
+    background-color: rgb(219, 132, 0);
+    border-radius: 8px;
+    border: none;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.253);
+    padding: 10px 20px;
+}
+
+.globalButton button {
+    padding: 10px 30px;
+}
+
+.globalButton a:hover,
+.globalButton button:hover {
+    background-color: #07272c;
+    color: white;
+    cursor: pointer;
+}
+
+
+/* Loader */
+
+.fa-star {
+    font-size: 2em;
+    color: #0b3b42;
+}
+
+.loader {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0px;
+    animation: loader 0.7s infinite;
+}
+
+@keyframes loader {
+    0% {
+        transform: translateY(0px);
     }
-    
+    50% {
+        transform: translateY(-40px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #1e3b44;
+    color: white;
+    text-align: center;
+    padding: 40px 0px;
+}
+
+footer p {
+    margin: 0px;
+}
+
+
+/* Media queries */
+
+@media all and (min-width: 600px) {
     .headerImage {
-        background-image: url(/images/1.jpg);
-        background-position: center;
-        background-size: cover;
-        height: 300px;
-    }
-    
-    a {
-        text-decoration: none;
-        color: white;
-    }
-    
-    h1,
-    h2 {
-        font-family: rubrik-new, sans-serif;
-        font-weight: 500;
-        text-transform: uppercase;
-        text-align: center;
-    }
-    
-    h3 {
-        font-family: 'Arial Narrow', Arial, sans-serif;
+        height: 400px;
     }
     /*Logo*/
-    
     .logo {
-        font-family: "Kallisto", sans-serif;
-        font-size: 1.5em;
-        position: absolute;
-        top: 7px;
-        left: 10px;
-        color: white;
-        margin: 0px;
-    }
-    
-    .logo span {
-        text-transform: uppercase;
-        font-weight: bold;
+        font-size: 1.6em;
     }
     /*Menu*/
-    
     nav {
-        display: none;
-        position: absolute;
-        top: 0px;
-        bottom: 0px;
-        right: 0px;
-        left: 0px;
-        background-color: #0b3b42;
-        z-index: 1000;
+        display: inherit;
+        position: initial;
+        background-color: #b6d4dd;
+        padding: 20px 0px;
     }
-    
     ul {
-        display: block;
-        width: 160px;
-        margin: 0px auto;
-        padding: 100px 0px;
-        text-align: center;
-    }
-    
-    li {
         display: inline-block;
-        text-align: center;
-        padding: 15px 30px;
+        width: 100%;
+        margin: 0px auto;
+        padding: 0px;
     }
-    
+    li {
+        display: initial;
+        text-align: none;
+        margin: 0px 10px;
+        padding: 21px 25px;
+    }
     li:hover {
-        background-color: rgba(255, 255, 255, 0.3);
+        background-color: #13677483;
     }
-    
     li a {
-        text-transform: uppercase;
-        font-family: "Isonorm D", sans-serif;
-        font-size: 1.8em;
+        color: black;
+        font-size: 1.1em;
     }
-    
     .active {
-        text-decoration: underline;
-        color: white;
+        color: black;
     }
     /*Menu bars*/
-    
     .fa-bars,
     .fa-times {
-        color: white;
-        font-size: 1.6em;
-        position: absolute;
-        top: 10px;
-        right: 15px;
-    }
-    
-    .fas:hover {
-        cursor: pointer;
-    }
-    
-    .fa-times {
-        font-size: 1.8em;
+        display: none;
     }
     /* Site navigation Blog / Blog specific*/
-    
     .siteNav {
-        display: flex;
-        justify-content: center;
-        padding: 10px;
+        padding-top: 20px;
     }
-    
-    .siteNav a {
-        font-size: 0.9em;
-        color: rgb(63, 63, 63);
-        padding: 0px 10px;
-        text-decoration: underline;
+}
+
+@media all and (min-width: 700px) {
+    /*Menu*/
+    li {
+        margin: 0px 20px;
     }
-    
-    .siteNav p {
-        color: rgb(63, 63, 63);
-        margin: 0px;
+}
+
+@media all and (min-width: 800px) {
+    .headerImage {
+        height: 600px;
     }
-    
-    #blogPostTitle {
-        text-decoration: none;
+    /*Logo*/
+    .logo {
+        font-size: 2em;
+    }
+    /*Menu*/
+    li {
+        margin: 0px 40px;
+    }
+}
+
+@media all and (min-width: 1000px) {
+    .logo {
+        font-size: 2.5em;
+    }
+    .headerImage {
+        height: 700px;
+    }
+    /*Menu*/
+    li {
+        padding: 23px 30px;
+    }
+    li a {
+        font-size: 1.2em;
+    }
+    /* Site navigation Blog / Blog specific*/
+    .siteNav {
+        padding-top: 30px;
     }
     /* Button */
-    
     .globalButton {
-        width: 140px;
-        margin: 40px auto;
+        margin: 60px auto;
+        width: 160px;
     }
-    
     .globalButton a,
     .globalButton button {
-        font-family: Isonorm D, sans-serif;
-        font-size: 1em;
-        color: black;
-        background-color: rgb(219, 132, 0);
-        border-radius: 8px;
-        border: none;
-        box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.253);
-        padding: 10px 20px;
-    }
-    
-    .globalButton button {
+        font-size: 1.1em;
         padding: 10px 30px;
     }
-    
-    .globalButton a:hover,
-    .globalButton button:hover {
-        background-color: #07272c;
-        color: white;
-        cursor: pointer;
+    .globalButton button {
+        padding: 10px 45px;
     }
-    /* Loader */
-    
-    .fa-star {
-        font-size: 2em;
-        color: #0b3b42;
+}
+
+@media all and (min-width: 1100px) {
+    .logo {
+        font-size: 3em;
+        padding: 0px;
+        margin: 20px 10px;
     }
-    
-    .loader {
-        display: flex;
-        justify-content: center;
-        margin: 50px 0px;
-        animation: loader 0.7s infinite;
+}
+
+@media all and (min-width: 1300px) {
+    .logo {
+        margin: 20px 30px;
     }
-    
-    @keyframes loader {
-        0% {
-            transform: translateY(0px);
-        }
-        50% {
-            transform: translateY(-40px);
-        }
-        100% {
-            transform: translateY(0px);
-        }
-    }
-    /* Footer */
-    
-    footer {
-        background-color: #07272cc4;
-        color: white;
-        text-align: center;
-        padding: 40px 0px;
-    }
-    
-    footer p {
-        margin: 0px;
-    }
-    /* Media queries */
-    
-    @media all and (min-width: 600px) {
-        .headerImage {
-            height: 400px;
-        }
-        /*Logo*/
-        .logo {
-            font-size: 1.6em;
-        }
-        /*Menu*/
-        nav {
-            display: initial;
-            position: initial;
-            background-color: white;
-            border-bottom: 1px solid black;
-            padding: 10px 0px;
-        }
-        ul {
-            display: inline-block;
-            width: 100%;
-            margin: 0px auto;
-            padding: 0px;
-        }
-        li {
-            display: initial;
-            text-align: none;
-            padding: 10px 25px;
-        }
-        li:hover {
-            background-color: #13677483;
-        }
-        li a {
-            color: black;
-            font-size: 1.3em;
-        }
-        .active {
-            color: black;
-        }
-        /*Menu bars*/
-        .fa-bars,
-        .fa-times {
-            display: none;
-        }
-        /* Site navigation Blog / Blog specific*/
-        .siteNav {
-            padding-top: 20px;
-        }
-    }
-    
-    @media all and (min-width: 700px) {
-        /*Menu*/
-        li {
-            padding: 10px 35px;
-        }
-        li a {
-            font-size: 1.1em;
-        }
-    }
-    
-    @media all and (min-width: 800px) {
-        .headerImage {
-            height: 600px;
-        }
-        /*Logo*/
-        .logo {
-            font-size: 2em;
-        }
-        /*Menu*/
-        li {
-            padding: 10px 50px;
-        }
-    }
-    
-    @media all and (min-width: 1000px) {
-        .logo {
-            font-size: 2.5em;
-        }
-        .headerImage {
-            height: 700px;
-        }
-        /*Menu*/
-        nav {
-            padding: 20px 0px;
-        }
-        li {
-            padding: 20px 50px;
-        }
-        /* Site navigation Blog / Blog specific*/
-        .siteNav {
-            padding-top: 30px;
-        }
-        /* Button */
-        .globalButton {
-            margin: 60px auto;
-        }
-        .globalButton a,
-        .globalButton button {
-            font-size: 1.1em;
-            padding: 10px 30px;
-        }
-        .globalButton button {
-            padding: 10px 45px;
-        }
-    }
-    
-    @media all and (min-width: 1100px) {
-        .logo {
-            font-size: 3em;
-            padding: 0px;
-            margin: 20px 10px;
-        }
-        /*Menu*/
-        nav {
-            padding: 20px 0px;
-        }
-        li {
-            padding: 20px 70px;
-        }
-    }
-    
-    @media all and (min-width: 1300px) {
-        .logo {
-            margin: 20px 30px;
-        }
-    }
+}
