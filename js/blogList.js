@@ -33,7 +33,8 @@ async function getList() {
             if (pageNumber > results.length) {
                 loadButton.innerText = "All good";
                 loadButton.style = `background-color: grey;
-                                    cursor: initial;`;
+                                    cursor: initial;
+                                    opacity: 0.5;`;
 
             }
         }

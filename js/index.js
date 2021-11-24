@@ -1,6 +1,6 @@
 /* Latest Post */
 
-const url = "https://vildehalvorsen.one/wp-json/wp/v2/posts?_embed&page/";
+const url = "https://vildehalvorsen.one/wp-json/wp/v2/posts?_embed&?page/";
 const latestPosts = document.querySelector(".latestPosts");
 const arrows = document.querySelector(".arrows");
 

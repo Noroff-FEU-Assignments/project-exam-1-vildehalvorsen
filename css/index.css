@@ -59,7 +59,8 @@ p {
 .slides h4,
 .slides p,
 .slides li,
-.slides ol {
+.slides ol,
+.slides figcaption {
     display: none;
 }
 

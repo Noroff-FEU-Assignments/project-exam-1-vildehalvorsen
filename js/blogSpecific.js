@@ -12,6 +12,7 @@ const url = "https://vildehalvorsen.one/wp-json/wp/v2/posts/" + postID;
 
 const blogPostTitle = document.querySelector("#blogPostTitle");
 
+
 async function getPostContent() {
     try {
         const response = await fetch(url);
@@ -42,20 +43,19 @@ function createPostHTML(results) {
                                     <p>${results.content.rendered}</p>
                                 </div>`;
 
+    modal.innerHTML = `${results.content.rendered}`;
 }
 
 
 /* Image modal */
 
+const modal = document.querySelector(".modal");
+const image = document.querySelector(".content img");
 
-// const image = document.querySelector(".wp-block-image");
-// const modal = document.querySelector(".modal");
+image.onclick = function() {
+    modal.style.display = "initial";
+}
 
-
-// image.onclick = function() {
-//     modal.style.display = "initial";
-// }
-
-// modal.onclick = function() {
-//     modal.style.display = "none";
-// }
+modal.onclick = function() {
+    modal.style.display = "none";
+}

@@ -139,8 +139,9 @@ li a {
 /* Button */
 
 .globalButton {
-    width: 140px;
+    width: 200px;
     margin: 40px auto;
+    text-align: center;
 }
 
 .globalButton a,
@@ -204,6 +205,14 @@ footer {
 
 footer p {
     margin: 0px;
+}
+
+
+/* Error */
+
+.error {
+    color: red;
+    text-align: center;
 }
 
 
@@ -299,7 +308,6 @@ footer p {
     /* Button */
     .globalButton {
         margin: 60px auto;
-        width: 160px;
     }
     .globalButton a,
     .globalButton button {

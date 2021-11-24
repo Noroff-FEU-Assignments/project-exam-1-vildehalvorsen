@@ -23,7 +23,8 @@ h3 {
 .blogContainer h4,
 .blogContainer p,
 .blogContainer li,
-.blogContainer ol {
+.blogContainer ol,
+.blogContainer figcaption {
     display: none;
 }
 
@@ -73,12 +74,5 @@ footer {
     img {
         height: 400x;
         width: 550px;
-    }
-}
-
-@media all and (min-width: 1000px) {
-    img {
-        height: 475px;
-        width: 700px;
     }
 }

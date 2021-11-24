@@ -1,24 +1,40 @@
 .content {
-    width: 280px;
+    width: 300px;
     margin: 100px auto;
 }
 
-.wp-block-image {
+.wp-block-image,
+.content ol {
     padding: 0px;
     margin: 0px;
 }
 
 .content img {
     height: 230px;
-    width: 280px;
+    width: 300px;
+    cursor: pointer;
+}
+
+.content li {
+    display: block;
+}
+
+.content li:hover {
+    background-color: initial;
 }
 
 .content p {
     text-align: justify;
+    margin-top: 20px;
+}
+
+figcaption {
+    text-align: center;
 }
 
 .content a {
-    color: black;
+    text-decoration: underline;
+    color: rgb(27, 73, 94);
 }
 
 
@@ -27,15 +43,100 @@
 .modal {
     display: none;
     z-index: 100000;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(255, 255, 255, 0.9);
     position: fixed;
     top: 0px;
     bottom: 0px;
     left: 0px;
     right: 0px;
+    text-align: center;
+}
+
+.modal h1,
+.modal h2,
+.modal h3,
+.modal h4,
+.modal p,
+.modal ol,
+.modal li,
+.modal figcaption {
+    display: none;
 }
 
 .modal img {
-    height: 280px;
-    width: 320px;
+    height: 100%;
+    width: 100%;
+    margin: 200px auto;
+}
+
+@media all and (min-width: 450px) {
+    .content {
+        width: 400px;
+    }
+    .content img {
+        height: 330px;
+        width: 400px;
+    }
+}
+
+@media all and (min-width: 550px) {
+    .content {
+        width: 500px;
+    }
+    .content img {
+        height: 400px;
+        width: 500px;
+    }
+    .content p,
+    .content li {
+        font-size: 1.1em;
+    }
+    /* Modal */
+    .modal img {
+        height: 80%;
+        width: 80%;
+        margin: 250px auto;
+    }
+}
+
+@media all and (min-width: 700px) {
+    .content {
+        width: 600px;
+    }
+    .content img {
+        height: 450px;
+        width: 600px;
+    }
+    .content p {
+        text-align: left;
+    }
+}
+
+@media all and (min-width: 900px) {
+    .content {
+        width: 800px;
+    }
+    .content h1 {
+        font-size: 2.5em;
+        padding-bottom: 30px;
+    }
+    .content img {
+        height: 340px;
+        width: 400px;
+        margin: 5px 20px 20px 0px;
+        float: left;
+    }
+    figcaption {
+        display: none;
+    }
+    .content p {
+        text-align: justify;
+        font-size: 1.15em;
+    }
+    /* Modal */
+    .modal img {
+        height: 60%;
+        width: 60%;
+        margin: 250px auto;
+    }
 }

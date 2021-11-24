@@ -70,3 +70,9 @@
         width: 650px;
     }
 }
+
+@media all and (min-width: 900px) {
+    .aboutContainer h1 {
+        font-size: 2.5em;
+    }
+}
