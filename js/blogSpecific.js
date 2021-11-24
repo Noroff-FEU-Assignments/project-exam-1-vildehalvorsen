@@ -50,9 +50,9 @@ function createPostHTML(results) {
 /* Image modal */
 
 const modal = document.querySelector(".modal");
-const image = document.querySelector(".content img");
+// const image = document.querySelector(".content img");
 
-image.onclick = function() {
+postContainer.onclick = function() {
     modal.style.display = "initial";
 }
 
