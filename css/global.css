@@ -228,7 +228,8 @@ footer p {
     /*Menu*/
     nav {
         display: block;
-        position: initial;
+        position: sticky;
+        top: 0px;
         background-color: #b6d4dd;
         padding: 20px 0px;
     }
