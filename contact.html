@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://use.typekit.net/yen1uje.css">
     <script src="https://kit.fontawesome.com/292441d70e.js" crossorigin="anonymous"></script>
     <link href="/css/global.css" rel="stylesheet" />
+    <link href="/css/contact.css" rel="stylesheet" />
     <title>the UNIVERSE | Contact</title>
 </head>
 
@@ -35,7 +36,42 @@
             </ul>
         </nav>
     </header>
-    <main></main>
+    <main>
+        <h1>Contact</h1>
+        <p>Do you have any questions or feedback?</p>
+        <p>Send me a message and the universe shall give you the answers you are seeking.</p>
+        <section class="formContainer">
+            <form method="POST">
+                <div>
+                    <label for="name">Name</label>
+                    <i class="fas fa-check" id="nameCheck"></i>
+                    <input type="text" id="name" name="name" placeholder="Name">
+                    <p id="nameError">Please fill in your name</p>
+                </div>
+                <div class="email">
+                    <label for="email">E-mail* <i class="fas fa-check" id="emailCheck"></i></label>
+                    <input type="email" id="email" name="email" placeholder="Example@mail.com">
+                    <p id="emailError">Please fill in a valid e-mail address</p>
+                </div>
+                <div>
+                    <label for="subject">Subject</label>
+                    <i class="fas fa-check" id="subjectCheck"></i>
+                    <input type="text" id="subject" name="subject" placeholder="Subject">
+                    <p id="subjectError">Please fill in a valid surname</p>
+                </div>
+                <div class="message">
+                    <label for="message">Message* </label>
+                    <i class="fas fa-check" id="messageCheck"></i>
+                    <textarea name="message" id="message" placeholder="..."></textarea>
+                    <p id="messageError">Please write a message.</p>
+                    <p id="required">Reguired fields*</p>
+                </div>
+                <div class="globalButton">
+                    <button id="sendButton">Send</button>
+                </div>
+            </form>
+        </section>
+    </main>
     <footer>
         <p>Vilde Halvorsen</p>
         <p>Copyright &copy;</p>

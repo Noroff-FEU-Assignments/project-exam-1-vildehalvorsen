@@ -1,0 +1,52 @@
+h1 {
+    margin: 50px auto 20px;
+}
+
+p {
+    width: 280px;
+    margin: 0px auto;
+    text-align: center;
+}
+
+
+/* Form */
+
+.formContainer {
+    width: 280px;
+    margin: 50px auto;
+}
+
+label {
+    display: none;
+}
+
+input {
+    font-family: franklin-gothic-urw, sans-serif;
+    font-size: 1em;
+    padding: 12px 10px;
+    width: 255px;
+}
+
+textarea {
+    font-family: franklin-gothic-urw, sans-serif;
+    font-size: 1em;
+    width: 255px;
+}
+
+
+/* Error / Validation */
+
+.fa-check {
+    display: none;
+    font-size: 0.7em;
+    color: green;
+}
+
+#nameError,
+#emailError,
+#subjectError,
+#messageError {
+    text-align: left;
+    font-size: 0.8em;
+    color: red;
+}

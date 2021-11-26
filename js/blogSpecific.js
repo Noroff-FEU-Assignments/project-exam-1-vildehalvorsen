@@ -50,7 +50,8 @@ function createPostHTML(results) {
 /* Image modal */
 
 const modal = document.querySelector(".modal");
-// const image = document.querySelector(".content img");
+const image = document.querySelector(".content img");
+
 
 postContainer.onclick = function() {
     modal.style.display = "initial";
@@ -59,3 +60,34 @@ postContainer.onclick = function() {
 modal.onclick = function() {
     modal.style.display = "none";
 }
+
+
+
+/* Maybe this is something */
+
+
+
+// async function getStuffFromAPI() {
+//     const response = await fetch(url);
+//     return await response.json();
+// }
+
+
+// function createHTML(post) {
+//     modal.innerHTML = `<div>${post.content.rendered}</div>`;
+//     setModalListener(container);
+// }
+
+// function setModalListener(container) {
+//     const img = container.querySelector("img");
+
+//     img.onclick = function(e) {
+//         modal.style.display = "initial";
+//     }
+//     modal.onclick = function(e) {
+//         modal.style.display = "none";
+//     }
+// }
+
+// const post = getStuffFromAPI();
+// createHTML(post);
