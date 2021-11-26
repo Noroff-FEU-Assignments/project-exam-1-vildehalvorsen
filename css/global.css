@@ -267,10 +267,6 @@ footer p {
 
 @media all and (min-width: 700px) {
     /*Menu*/
-    nav {
-        position: sticky;
-        top: 0px;
-    }
     li {
         margin: 0px 20px;
     }
