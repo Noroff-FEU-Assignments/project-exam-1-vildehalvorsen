@@ -35,7 +35,7 @@ figcaption {
 .content a {
     text-decoration: underline;
     color: rgb(27, 73, 94);
-    max-width: fit-content;
+    max-width: max-content;
 }
 
 
