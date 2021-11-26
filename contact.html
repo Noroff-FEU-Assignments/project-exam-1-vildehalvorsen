@@ -41,30 +41,27 @@
         <p>Do you have any questions or feedback?</p>
         <p>Send me a message and the universe shall give you the answers you are seeking.</p>
         <section class="formContainer">
+            <p class="validation"></p>
             <form method="POST">
                 <div>
-                    <label for="name">Name</label>
-                    <i class="fas fa-check" id="nameCheck"></i>
+                    <label for="name">Name<i class="fas fa-check" id="nameCheck"></i></label>
                     <input type="text" id="name" name="name" placeholder="Name">
                     <p id="nameError">Please fill in your name</p>
                 </div>
                 <div class="email">
-                    <label for="email">E-mail* <i class="fas fa-check" id="emailCheck"></i></label>
+                    <label for="email">E-mail*<i class="fas fa-check" id="emailCheck"></i></label>
                     <input type="email" id="email" name="email" placeholder="Example@mail.com">
                     <p id="emailError">Please fill in a valid e-mail address</p>
                 </div>
                 <div>
-                    <label for="subject">Subject</label>
-                    <i class="fas fa-check" id="subjectCheck"></i>
+                    <label for="subject">Subject<i class="fas fa-check" id="subjectCheck"></i></label>
                     <input type="text" id="subject" name="subject" placeholder="Subject">
                     <p id="subjectError">Please fill in a valid surname</p>
                 </div>
                 <div class="message">
-                    <label for="message">Message* </label>
-                    <i class="fas fa-check" id="messageCheck"></i>
+                    <label for="message">Message*<i class="fas fa-check" id="messageCheck"></i></label>
                     <textarea name="message" id="message" placeholder="..."></textarea>
                     <p id="messageError">Please write a message.</p>
-                    <p id="required">Reguired fields*</p>
                 </div>
                 <div class="globalButton">
                     <button id="sendButton">Send</button>
@@ -77,6 +74,8 @@
         <p>Copyright &copy;</p>
     </footer>
     <script src="/js/global.js"></script>
+    <script src="/js/contact.js"></script>
+    <script src="/js/validation/validation.js"></script>
 </body>
 
 </html>
