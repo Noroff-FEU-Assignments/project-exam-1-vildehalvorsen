@@ -12,6 +12,7 @@ const url = "https://vildehalvorsen.one/wp-json/wp/v2/posts/" + postID;
 
 const blogPostTitle = document.querySelector("#blogPostTitle");
 
+const modal = document.querySelector(".modal");
 
 async function getPostContent() {
     try {
@@ -24,9 +25,21 @@ async function getPostContent() {
 
         createPostHTML(results);
 
+        if (createPostHTML) {
+            const image = document.querySelector(".content img");
+
+            image.onclick = function() {
+                modal.style.display = "initial";
+            }
+        }
+        document.onclick = function(event) {
+            if (event.target === modal) {
+                modal.style.display = "none";
+            }
+        }
     } catch (error) {
         console.log(error);
-        postContainer.innerHTML = "OPS! something happened";
+        postContainer.innerHTML = error + errorMessage();
     }
 }
 
@@ -45,49 +58,3 @@ function createPostHTML(results) {
 
     modal.innerHTML = `${results.content.rendered}`;
 }
-
-
-/* Image modal */
-
-const modal = document.querySelector(".modal");
-const image = document.querySelector(".content img");
-
-
-postContainer.onclick = function() {
-    modal.style.display = "initial";
-}
-
-modal.onclick = function() {
-    modal.style.display = "none";
-}
-
-
-
-/* Maybe this is something */
-
-
-
-// async function getStuffFromAPI() {
-//     const response = await fetch(url);
-//     return await response.json();
-// }
-
-
-// function createHTML(post) {
-//     modal.innerHTML = `<div>${post.content.rendered}</div>`;
-//     setModalListener(container);
-// }
-
-// function setModalListener(container) {
-//     const img = container.querySelector("img");
-
-//     img.onclick = function(e) {
-//         modal.style.display = "initial";
-//     }
-//     modal.onclick = function(e) {
-//         modal.style.display = "none";
-//     }
-// }
-
-// const post = getStuffFromAPI();
-// createHTML(post);
