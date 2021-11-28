@@ -1,7 +1,7 @@
-let pageNumber = 5;
+let pageNumber = 10;
 
 function countNumber() {
-    pageNumber += 5;
+    pageNumber += 10;
 }
 
 const url = "https://vildehalvorsen.one/wp-json/wp/v2/posts?per_page=";
@@ -22,6 +22,7 @@ async function getList() {
             const content = results[i].content.rendered;
 
             console.log(results[i].id);
+
 
             blogContainer.innerHTML += `<div class="blogPost">
                                             <a href="/blogSpecific.html?id=${results[i].id}">

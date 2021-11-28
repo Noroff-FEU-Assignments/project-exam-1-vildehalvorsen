@@ -1,11 +1,11 @@
 .blogContainer {
     display: flex;
     flex-direction: column;
-    margin: 100px auto;
+    margin: 120px auto 0px;
 }
 
 .blogPost {
-    margin: 50px auto 20px;
+    margin: 0px auto 20px;
 }
 
 .blogPost:hover {
@@ -60,10 +60,6 @@ footer {
 }
 
 @media all and (min-width: 700px) {
-    img {
-        height: 350px;
-        width: 500px;
-    }
     h3 {
         font-size: 1.5em;
         padding: 30px 20px;
@@ -71,8 +67,17 @@ footer {
 }
 
 @media all and (min-width: 800px) {
+    .blogContainer {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 800px;
+    }
+    .blogPost {
+        margin: 50px 20px 20px;
+    }
     img {
-        height: 400x;
-        width: 550px;
+        height: 250px;
+        width: 350px;
     }
 }
