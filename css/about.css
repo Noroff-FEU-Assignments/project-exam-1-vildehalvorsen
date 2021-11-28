@@ -1,6 +1,6 @@
 .aboutContainer {
     width: 280px;
-    margin: 100px auto;
+    margin: 50px auto 100px;
 }
 
 .wp-block-image {
@@ -24,7 +24,7 @@
 @media all and (min-width: 500px) {
     .aboutContainer {
         width: 350px;
-        margin: 150px auto;
+        margin: 100px auto 150px;
     }
     .aboutContainer img {
         height: 260px;
@@ -51,7 +51,10 @@
 @media all and (min-width: 700px) {
     .aboutContainer {
         width: 550px;
-        margin: 170px auto;
+        margin: 150px auto;
+    }
+    .aboutContainer h1 {
+        font-size: 2.5em;
     }
     .aboutContainer img {
         height: 400px;
@@ -72,11 +75,5 @@
     .aboutContainer img {
         height: 470px;
         width: 650px;
-    }
-}
-
-@media all and (min-width: 900px) {
-    .aboutContainer h1 {
-        font-size: 2.5em;
     }
 }
