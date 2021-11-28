@@ -9,6 +9,8 @@ async function getPosts() {
         const response = await fetch(url);
         const results = await response.json();
 
+        latestPosts.innerHTML = "";
+
         for (let i = 0; i < results.length; i++) {
             const title = results[i].title.rendered;
             const content = results[i].content.rendered;

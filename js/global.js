@@ -10,3 +10,13 @@ hamburgerMenu.onclick = function() {
 cross.onclick = function() {
     nav.style.display = "none"
 }
+
+
+/* Footer */
+
+const toTopLink = document.querySelector(".back");
+
+toTopLink.addEventListener("click", function() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+});
