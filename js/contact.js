@@ -58,7 +58,7 @@ form.addEventListener("submit", validateContactForm);
 const validate = document.querySelector(".validation");
 
 function submitContactForm() {
-    validate.innerText = `Thanks!`;
+    validate.innerText = `Thanks! Your message has been sent!`;
 
     form.reset();
 
