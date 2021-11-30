@@ -18,7 +18,7 @@ async function getInfo() {
         }
     } catch (error) {
         console.log(error);
-        aboutContainer.innerHTML = "OPS! something happened";
+        aboutContainer.innerHTML = error + errorMessage();
     }
 }
 
