@@ -30,6 +30,11 @@
             font-family: marine-up, sans-serif;
             font-weight: 400;
         }
+        
+        img {
+            /*For alt text*/
+            color: black;
+        }
         /*Logo*/
         
         .logo {
@@ -226,6 +231,11 @@
                 font-size: 2em;
             }
             /*Menu*/
+            header {
+                position: sticky;
+                top: 0px;
+                z-index: 110000;
+            }
             nav {
                 display: block;
                 position: initial;

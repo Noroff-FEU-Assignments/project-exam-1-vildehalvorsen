@@ -15,6 +15,7 @@ const subjectError = document.querySelector("#subjectError");
 const message = document.querySelector("#message");
 const messageError = document.querySelector("#messageError");
 
+const inputs = document.querySelector("input");
 
 function validateContactForm() {
     event.preventDefault();
@@ -47,6 +48,7 @@ function validateContactForm() {
         submitContactForm();
     }
 
+
 }
 
 
@@ -56,7 +58,11 @@ form.addEventListener("submit", validateContactForm);
 const validate = document.querySelector(".validation");
 
 function submitContactForm() {
-    validate.innerText = `Thanks! Your message has been sent.`;
+    validate.innerText = `Thanks!`;
 
     form.reset();
+
+    setTimeout(function() {
+        validate.innerText = "";
+    }, 5000);
 }
