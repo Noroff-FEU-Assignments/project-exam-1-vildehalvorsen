@@ -214,18 +214,10 @@
             }
             /* Media queries */
             
-            @media only screen and (min-width: 0px) and (min-height: 0px) and (orientation: landscape) {
-                .headerImage {
-                    height: 320px;
-                }
-            }
-            /* @media only screen and (min-width: 800px) and (min-height: 375px) and (orientation: landscape) {
-            .headerImage {
-                height: 375px;
-            }
-        } */
-            
             @media all and (min-width: 600px) {
+                .headerImage {
+                    height: 400px;
+                }
                 /*Logo*/
                 .logo {
                     font-size: 2em;
@@ -283,9 +275,6 @@
             }
             
             @media all and (min-width: 800px) {
-                .headerImage {
-                    height: 400px;
-                }
                 /*Logo*/
                 .logo {
                     font-size: 2.5em;

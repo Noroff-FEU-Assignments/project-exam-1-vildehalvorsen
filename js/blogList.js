@@ -18,8 +18,9 @@ async function getList() {
         blogContainer.innerHTML = "";
 
         for (let i = 0; i < results.length; i++) {
-            const title = results[i].title.rendered;
             const content = results[i].content.rendered;
+            const title = results[i].title.rendered;
+            const date = results[i].date;
 
             console.log(results[i].id);
 
@@ -27,7 +28,10 @@ async function getList() {
             blogContainer.innerHTML += `<div class="blogPost">
                                             <a href="/blogSpecific.html?id=${results[i].id}">
                                                 <div>${content}</div>
-                                                <h3>${title}</h3>    
+                                                <div class="contentInfo">
+                                                <h3>${title}</h3>
+                                                <h3 id="date">Published: ${date}</h3>
+                                                </div>  
                                             </a>
                                         </div>`;
 

@@ -1,3 +1,8 @@
+h1 {
+    color: rgba(0, 0, 0, 0);
+    margin: 0px 0px -10px;
+}
+
 .blogContainer {
     display: flex;
     flex-direction: column;
@@ -12,12 +17,21 @@
     transform: scale(1.04);
 }
 
-h3 {
+.contentInfo {
     background-color: #b6d4dd;
     color: black;
     text-align: center;
     padding: 20px 0px;
     margin-top: -10px;
+}
+
+h3 {
+    margin: 0px;
+}
+
+#date {
+    color: rgb(56, 56, 56);
+    font-size: 0.8em;
 }
 
 .blogContainer h4,

@@ -53,6 +53,7 @@ function createPostHTML(results) {
 
     postContainer.innerHTML = `<div class="content">
                                     <h1>${results.title.rendered}</h1>
+                                    <p id="date">Published: ${results.date}</p>
                                     <p>${results.content.rendered}</p>
                                 </div>`;
 
