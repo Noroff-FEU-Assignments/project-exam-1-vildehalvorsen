@@ -73,13 +73,6 @@ footer {
     }
 }
 
-@media all and (min-width: 700px) {
-    h3 {
-        font-size: 1.5em;
-        padding: 30px 20px;
-    }
-}
-
 @media all and (min-width: 800px) {
     .blogContainer {
         flex-direction: row;
