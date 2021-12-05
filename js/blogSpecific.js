@@ -47,7 +47,7 @@ getPostContent();
 
 function createPostHTML(results) {
     headTitle.innerText = `the UNIVERSE | ${results.title.rendered}`;
-    headMetaText.innerHTML += `<meta name="description" content="${results.title.rendered}">`;
+    headMetaText.innerHTML += `<meta name="description" content="A blog post called ${results.title.rendered}">`;
 
     blogPostTitle.innerHTML = `${results.title.rendered}`;
 
