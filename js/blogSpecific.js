@@ -13,6 +13,7 @@ const url = "https://vildehalvorsen.one/wp-json/wp/v2/posts/" + postID;
 const blogPostTitle = document.querySelector("#blogPostTitle");
 
 const modal = document.querySelector(".modal");
+const exit = document.querySelector(".fa-times-circle");
 
 async function getPostContent() {
     try {
@@ -27,9 +28,13 @@ async function getPostContent() {
 
         if (createPostHTML) {
             const image = document.querySelector(".content img");
+            const exit = document.querySelector(".fa-times-circle");
 
             image.onclick = function() {
                 modal.style.display = "initial";
+            }
+            exit.onclick = function() {
+                modal.style.display = "none";
             }
         }
         document.onclick = function(event) {
@@ -57,5 +62,5 @@ function createPostHTML(results) {
                                     <p>${results.content.rendered}</p>
                                 </div>`;
 
-    modal.innerHTML = `${results.content.rendered}`;
+    modal.innerHTML += `${results.content.rendered}`;
 }
