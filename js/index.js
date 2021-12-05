@@ -120,6 +120,7 @@ form.addEventListener("submit", validateSignUpForm);
 
 function submitSignUpForm() {
     info.innerHTML = `Thank you for signing up!`;
+    info.style.color = "green";
 
     form.reset();
 }
