@@ -81,8 +81,9 @@
     }
     
     .fa-times-circle {
-        display: flex;
-        justify-content: right;
+        position: absolute;
+        top: 0;
+        right: 0;
         font-size: 2em;
         margin: 10px;
         color: rgb(27, 73, 94);
