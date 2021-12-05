@@ -98,7 +98,7 @@ const emailError = document.querySelector("#emailError");
 function validateSignUpForm() {
     event.preventDefault();
 
-    if (checkValue(fullName.value, 3)) {
+    if (checkValue(fullName.value, 5)) {
         fullNameError.style.display = "none";
     } else {
         fullNameError.style.display = "block";
@@ -110,7 +110,7 @@ function validateSignUpForm() {
         emailError.style.display = "block";
     }
 
-    if (checkValue(fullName.value, 3) && validateEmail(email.value)) {
+    if (checkValue(fullName.value, 5) && validateEmail(email.value)) {
         submitSignUpForm();
     }
 
